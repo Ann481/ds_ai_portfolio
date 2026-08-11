@@ -1,0 +1,38 @@
+site_name: Portfolio
+site_author: Anna Olszówka
+site_description: Portfolio projektów z Data Science
+
+theme:
+  name: material
+  palette:
+    primary: blue
+
+plugins:
+  - search
+  - i18n:
+      default_language: pl
+      languages:
+        - locale: pl
+          name: Polski
+          default: true
+        - locale: en
+          name: English
+          nav_translations:
+            "Strona Domowa": "Home"
+            "Projekty": "Projects"
+            "O projekcie": "About project"
+            "Szczegóły projektu": "Project details"
+
+nav:
+  - "Strona Domowa": index.md
+  - "Projekty":
+      - "Language_helper":
+          - "O projekcie": Language_helper/index.md
+          - "Szczegóły projektu": Language_helper/linguapulse.md
+      - "Halfmarathon":
+          - "O projekcie": Halfmaraton/index.md
+          - "Szczegóły projektu": Halfmaraton/polmaraton.md
+      - "FindFriends":
+          - "O projekcie": FindFriends/index.md
+          - "Szczegóły projektu": FindFriends/find_friends.md
+ 
